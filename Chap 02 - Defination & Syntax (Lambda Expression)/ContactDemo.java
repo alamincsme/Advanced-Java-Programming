@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Main {
+public class ContactDemo {
     public static void main(String[] args) {
           List<Contact> contacts = Arrays.asList(new Contact("Mohammad", "mohammad@gmail.com", 24, Gender.MALE),
                   new Contact("alamin", "alamin@gmail.com", 30, Gender.MALE),
@@ -19,11 +19,16 @@ public class Main {
 
     }
 }
+
+
 enum Gender {
     MALE ,
     FEMALE,
     OTHER;
 }
+
+
+
 class Contact implements Comparator<Contact> {
     private String name;
     private String email;

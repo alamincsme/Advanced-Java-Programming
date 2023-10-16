@@ -12,8 +12,7 @@ public class WordFrequencyCounterOne {
     public static Map<String, Long> countFrequency(List<String> words) {
        return words
                .stream()
-               .collect(Collectors.groupingBy(
-                       Function.identity(), Collectors.counting()
+               .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()
                ));
     }
 
